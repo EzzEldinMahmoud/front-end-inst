@@ -1,0 +1,146 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/styles.css">
+    <title>ver.2</title>
+</head>
+<body class="flex flex-col h-screen text-white bg-white-700">
+
+    <nav class="shadow-xl">
+        <div class="container px-4 mx-auto">
+            <div class="h-20 flex justify-between items-center">
+                <!-- SIDE-NAV -->
+                <div>
+                    <!-- BTN -->
+                    <a class="hover:text-white" href="#side-nav" uk-toggle><i data-feather="menu"></i></a>
+
+                    <!-- OFF-CANVAS -->
+                    <div id="side-nav" uk-offcanvas="overlay: true">
+                        <div class="uk-offcanvas-bar bg-gray-900">
+
+                            <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+                            <ul class="uk-nav uk-nav-default ">
+                                <li class="uk-active bold text-2xl"><a href="home.html">Home</a></li>
+                                <li class="bold text-2xl"><a href="profile.html">Profile</a></li>
+                                <li class="bold text-2xl"><a href="login.html">Logout</a></li>
+                               
+                            </ul>
+                            <div class="flex items-center space-x-2.5 h-12 absolute " style="bottom:0px;">
+                                <div class="h-8 w-8  rounded-full  "><img  class="rounded-full"src="assets/imgs/1.jpg" alt=""></div>
+                                <div><a href="#">shitty trainee</a></div>
+                                <div><i class="h-4 w-4 text-blue-500" data-feather="check-circle"></i></div>
+                                <div class="text-gray-500 text-xs">Following</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- INSTAGRAM-LOGO -->
+                <div><a href="#"><img class="h-16" src="assets/imgs/logo2.png"></a></div>
+                <!-- SEARCH -->
+                <div><a class="hover:text-white uk-navbar-toggle" uk-toggle="target: .app-search; animation: uk-animation-fade" href="#"><i data-feather="search"></i></a></div>
+                <div class="app-search uk-navbar-left" hidden>
+                        <div class="uk-navbar-item uk-width-expand">
+                            <div class="uk-inline">
+                                <form class="uk-search uk-search-navbar uk-width-1-1">
+                                  <input class="uk-search-input text-white" type="search" placeholder="Search" autofocus>
+                              </form>
+                              <!--here write the recommended searchs for search bar-->
+                                <div uk-dropdown="mode: click" class="">
+                                    <div class=".uk-panel ">
+                                        <ul class=".uk-panel-box ">
+                                            <li class=".uk-panel-title "><div class="flex items-center space-x-2.5 h-12">
+                                                <div class="h-8 w-8  rounded-full  "><img  class="rounded-full"src="assets/imgs/1.jpg" alt=""></div>
+                                                <div><a href="#">shitty trainee</a></div>
+                                                <div><i class="h-4 w-4 text-blue-500" data-feather="check-circle"></i></div>
+                                                <div class="text-gray-500 text-xs">Following</div>
+                                            </div>
+                                            </li>
+                                            </ul>
+                                        <ul class=".uk-panel-box w-auto">
+                                            <li class=".uk-panel-title "><div class="flex items-center space-x-2.5 h-12">
+                                                <div class="h-8 w-8  rounded-full  "><img  class="rounded-full"src="assets/imgs/1.jpg" alt=""></div>
+                                                <div><a href="#">shitty trainee</a></div>
+                                                <div><i class="h-4 w-4 text-blue-500" data-feather="check-circle"></i></div>
+                                                <div class="text-gray-500 text-xs">Following</div>
+                                            </div></li>
+                                            </ul>
+                                            <ul class=".uk-panel-box w-auto">
+                                                <li class=".uk-panel-title "><div class="flex items-center space-x-2.5 h-12">
+                                                    <div class="h-8 w-8  rounded-full  "><img  class="rounded-full"src="assets/imgs/1.jpg" alt=""></div>
+                                                    <div><a href="#">shitty trainee</a></div>
+                                                    <div><i class="h-4 w-4 text-blue-500" data-feather="check-circle"></i></div>
+                                                    <div class="text-gray-500 text-xs">Following</div>
+                                                </div></li>
+                                                </ul>
+
+</div>
+
+                                </div>
+                              </div>
+                        </div>
+                        <a class="uk-navbar-toggle" uk-close uk-toggle="target: .app-search; animation: uk-animation-fade" href="#"></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+<main>
+    <div class="mx-auto h-auto w-full text-center">
+        <div class="relative w-24 h-24 mx-auto my-10">
+            <img class="rounded-full border border-gray-100 shadow-sm" src="assets/imgs/1.jpg" alt="user image" />
+            <br>
+            <p class="text-gray-700 font-serif font-serif bold text-2xl	">Shitty Trainee</p>
+        </div>
+       <br>
+       <br>
+       <br>
+            <p class="text-black bold text-xl">here is some bio bullshit for funs i hope you aren't reading this <br>
+                and choking on pepsi with malice </p>
+        </div>
+        <br><br>
+<div class=" flex flex-wrap mx-auto text-black text-xl bold  "><div class="mx-auto  " >
+    <ul class="flex  space-x-32  "><li>+99</li><li>+99</li><li>+99</li></ul>
+    <ul class="flex  space-x-20   "><li>Following</li><li>Followers</li><li>Posts</li></ul>
+</div></div>
+<div class="container ">
+    <div class="gallery">
+        <figure class="gallery__item gallery__item--1">
+            <img src="https://source.unsplash.com/random?1" alt="Gallery image 1" class="gallery__img">
+        </figure>
+        <figure class="gallery__item gallery__item--2">
+            <img src="https://source.unsplash.com/random?2" alt="Gallery image 2" class="gallery__img">
+        </figure>
+        <figure class="gallery__item gallery__item--3">
+            <img src="https://source.unsplash.com/random?3" alt="Gallery image 3" class="gallery__img">
+        </figure>
+        <figure class="gallery__item gallery__item--4">
+            <img src="https://source.unsplash.com/random?4" alt="Gallery image 4" class="gallery__img">
+        </figure>
+        <figure class="gallery__item gallery__item--5">
+            <img src="https://source.unsplash.com/random?5" alt="Gallery image 5" class="gallery__img">
+        </figure>
+        <figure class="gallery__item gallery__item--6">
+            <img src="https://source.unsplash.com/random?6" alt="Gallery image 6" class="gallery__img">
+        </figure>
+    </div>
+</div>
+
+
+
+
+</div>
+</main>
+<script src="https://unpkg.com/feather-icons"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/css/uikit.min.css" />
+<script src="https://unpkg.com/feather-icons"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+<script src="assets/js.js"></script>
+  <!-- ... -->
+</body>
+</html>

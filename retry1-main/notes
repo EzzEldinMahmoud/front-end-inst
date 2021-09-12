@@ -1,0 +1,29 @@
+<input type="file" accept="image/*" onchange="loadFile(event)" class="btn btn-primary ">
+<img id="output"/>
+<script>
+  var loadFile = function(event) {
+    var output = document.getElementById('output');
+    output.src = URL.createObjectURL(event.target.files[0]);
+    output.onload = function() {
+      URL.revokeObjectURL(output.src) // free memory
+    }
+  };
+</script>
+<input type='file' />
+</br>
+<img id="myImg" src="#" alt="your image" style="display: none;" width=100 />
+<img id="myImg" src="#" alt="your image" style="display: none;" width=200 />
+<img id="myImg" src="#" alt="your image" style="display: none;" width=400 />
+<img id="myImg" src="#" alt="your image" style="display: none;" width=800 />
+
+
+<!--
+  here is the function for the said dropdown menu believe it ? using UIkit is awesome
+
+-->
+<div class="uk-inline">
+  <form class="uk-search uk-search-navbar uk-width-1-1">
+    <input class="uk-search-input text-white" type="search" placeholder="Search" autofocus>
+</form>
+  <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+</div>
